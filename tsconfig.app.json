@@ -9,10 +9,11 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    // "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": false, // was "true"
     "jsx": "react-jsx",
 
     /* Linting */
@@ -20,7 +21,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Output types */
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["src"],
 }
