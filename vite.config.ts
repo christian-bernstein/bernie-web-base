@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// import react from '@vitejs/plugin-react'
+import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -9,12 +10,18 @@ export default defineConfig({
       entry: './src/index.ts',
       name: "bernie-web-base",
       fileName: 'bernie-web-base', // .js ?
+      formats: ["es"]
     },
     rollupOptions: {
       external: ['react', 'react-dom']
     },
   },
   plugins: [
-      react()
+      // react(),
+      dts({
+        rollupTypes: true,
+        insertTypesEntry: true,
+        tsconfigPath: './tsconfig.app.json',
+      })
   ]
 })
