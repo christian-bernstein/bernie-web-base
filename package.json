@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "repository": "https://github.com/christian-bernstein/bernie-web-base",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
