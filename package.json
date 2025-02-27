@@ -1,7 +1,7 @@
 {
   "name": "@christian-bernstein/bernie-web-base",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
