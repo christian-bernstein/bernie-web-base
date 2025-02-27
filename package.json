@@ -1,13 +1,16 @@
 {
-  "name": "bernie-web-base",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@christian-bernstein/bernie-web-base",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "react": "^19.0.0",
