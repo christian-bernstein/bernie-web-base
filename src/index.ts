@@ -1,1 +1,0 @@
-export { TestClassA } from './TestClassA'

@@ -7,10 +7,11 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node ./buildtools/buildtools.js && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "prepublish": "npm run build"
   },
   "repository": "https://github.com/christian-bernstein/bernie-web-base",
   "publishConfig": {
